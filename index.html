@@ -5,38 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>赞助与支持</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background-color: #f4f5f7;
+            padding: 24px;
+            background: #f4f5f7;
+            color: #222;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
+
         .card {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            width: min(100%, 360px);
+            padding: 28px;
+            border: 1px solid #e8ebef;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 8px 28px rgba(20, 32, 44, 0.08);
             text-align: center;
         }
-        img {
+
+        .qr-placeholder {
+            display: grid;
+            place-items: center;
             width: 220px;
             height: 220px;
+            margin: 0 auto 20px;
+            border: 1px dashed #b8c1cc;
             border-radius: 8px;
-            border: 1px solid #eee;
+            background:
+                linear-gradient(90deg, rgba(17, 24, 39, 0.08) 1px, transparent 1px),
+                linear-gradient(rgba(17, 24, 39, 0.08) 1px, transparent 1px),
+                #fafbfc;
+            background-size: 22px 22px;
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
         }
-        h2 { margin: 10px 0 5px; color: #333; font-size: 20px; }
-        p { color: #666; margin: 0; font-size: 14px; }
+
+        h1 {
+            margin: 0 0 8px;
+            color: #333;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="data:image/jpeg;base64,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
-        <h2>感谢支持</h2>
+    <main class="card">
+        <div class="qr-placeholder" aria-label="赞助二维码占位">
+            二维码图片待更新
+        </div>
+        <h1>感谢支持</h1>
         <p>买杯咖啡，支持创作 ☕️</p>
-    </div>
+    </main>
 </body>
 </html>
