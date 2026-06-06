@@ -31,22 +31,14 @@
             text-align: center;
         }
 
-        .qr-placeholder {
-            display: grid;
-            place-items: center;
+        .qr-code {
+            display: block;
             width: 220px;
             height: 220px;
             margin: 0 auto 20px;
-            border: 1px dashed #b8c1cc;
+            border: 1px solid #edf0f3;
             border-radius: 8px;
-            background:
-                linear-gradient(90deg, rgba(17, 24, 39, 0.08) 1px, transparent 1px),
-                linear-gradient(rgba(17, 24, 39, 0.08) 1px, transparent 1px),
-                #fafbfc;
-            background-size: 22px 22px;
-            color: #6b7280;
-            font-size: 14px;
-            line-height: 1.5;
+            object-fit: cover;
         }
 
         h1 {
@@ -65,9 +57,7 @@
 </head>
 <body>
     <main class="card">
-        <div class="qr-placeholder" aria-label="赞助二维码占位">
-            二维码图片待更新
-        </div>
+        <img class="qr-code" src="assets/support-qr.jpg" alt="赞助收款二维码">
         <h1>感谢支持</h1>
         <p>买杯咖啡，支持创作 ☕️</p>
     </main>
